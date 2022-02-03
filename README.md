@@ -1,4 +1,4 @@
-# info
+# Cow Crack
 a tool to "crack" facebook account.
 # install packpages
 ```BASH
