@@ -48,3 +48,4 @@ python run.py
 <h1>credits</h1>
 <li>Yayan-XD and Friends. </li>
 <li>Tim offline python sukabumi</li>
+<p>Last update: 03, Febuari, 2022</p>
