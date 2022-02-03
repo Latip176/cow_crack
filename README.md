@@ -20,6 +20,14 @@ python setup.py build_ext --inplace
 cd $HOME/cow_crack
 python run.py
 ```
+# command buat update
+```BASH
+cd $HOME/cow_crack
+git pull
+rm -rf *.so
+python setup.py build_ext --inplace
+python run.py
+```
 # license price information
 <table border="1">
 <tr>
