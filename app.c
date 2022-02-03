@@ -5474,7 +5474,7 @@ static PyObject *__pyx_pf_3app_4Data_menu(CYTHON_UNUSED PyObject *__pyx_self, Py
  * 		print(f" * Welcome {self.name} in tool! Pilih crack dan mulai.")
  * 		print(f"[{BM}1{P}]. Crack dari pertemanan publik\n[{BM}2{P}]. Crack dari followers publik\n[3]. Crack dari pencarian nama\n[{BM}4{P}]. Checkpoint detector\n[{BM}5{P}]. On/Off Profile Guard [NEXT UPDATE]\n[{BM}6{P}]. Cek hasil {H}Ok{P}/{K}Cp{P}\n[{M}0{P}]. Logout akun (hapus token)\n")             # <<<<<<<<<<<<<<
  * 		_chose = input(f"[{K}?{P}] Chose: ")
- * 		__pilih = ["01","1","02","2","03","3","0","04","4","05","5"]
+ * 		__pilih = ["01","1","02","2","03","3","0","04","4","05","5","06","6"]
  */
   __pyx_t_3 = PyTuple_New(33); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 161, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -5720,7 +5720,7 @@ static PyObject *__pyx_pf_3app_4Data_menu(CYTHON_UNUSED PyObject *__pyx_self, Py
  * 		print(f" * Welcome {self.name} in tool! Pilih crack dan mulai.")
  * 		print(f"[{BM}1{P}]. Crack dari pertemanan publik\n[{BM}2{P}]. Crack dari followers publik\n[3]. Crack dari pencarian nama\n[{BM}4{P}]. Checkpoint detector\n[{BM}5{P}]. On/Off Profile Guard [NEXT UPDATE]\n[{BM}6{P}]. Cek hasil {H}Ok{P}/{K}Cp{P}\n[{M}0{P}]. Logout akun (hapus token)\n")
  * 		_chose = input(f"[{K}?{P}] Chose: ")             # <<<<<<<<<<<<<<
- * 		__pilih = ["01","1","02","2","03","3","0","04","4","05","5"]
+ * 		__pilih = ["01","1","02","2","03","3","0","04","4","05","5","06","6"]
  * 		while _chose not in __pilih:
  */
   __pyx_t_3 = PyTuple_New(5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 162, __pyx_L1_error)
@@ -5771,11 +5771,11 @@ static PyObject *__pyx_pf_3app_4Data_menu(CYTHON_UNUSED PyObject *__pyx_self, Py
   /* "app.py":163
  * 		print(f"[{BM}1{P}]. Crack dari pertemanan publik\n[{BM}2{P}]. Crack dari followers publik\n[3]. Crack dari pencarian nama\n[{BM}4{P}]. Checkpoint detector\n[{BM}5{P}]. On/Off Profile Guard [NEXT UPDATE]\n[{BM}6{P}]. Cek hasil {H}Ok{P}/{K}Cp{P}\n[{M}0{P}]. Logout akun (hapus token)\n")
  * 		_chose = input(f"[{K}?{P}] Chose: ")
- * 		__pilih = ["01","1","02","2","03","3","0","04","4","05","5"]             # <<<<<<<<<<<<<<
+ * 		__pilih = ["01","1","02","2","03","3","0","04","4","05","5","06","6"]             # <<<<<<<<<<<<<<
  * 		while _chose not in __pilih:
  * 			print("\n[!] Pilihan tidak ada")
  */
-  __pyx_t_3 = PyList_New(11); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 163, __pyx_L1_error)
+  __pyx_t_3 = PyList_New(13); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 163, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_INCREF(__pyx_kp_u_01);
   __Pyx_GIVEREF(__pyx_kp_u_01);
@@ -5810,12 +5810,18 @@ static PyObject *__pyx_pf_3app_4Data_menu(CYTHON_UNUSED PyObject *__pyx_self, Py
   __Pyx_INCREF(__pyx_kp_u_5);
   __Pyx_GIVEREF(__pyx_kp_u_5);
   PyList_SET_ITEM(__pyx_t_3, 10, __pyx_kp_u_5);
+  __Pyx_INCREF(__pyx_kp_u_06);
+  __Pyx_GIVEREF(__pyx_kp_u_06);
+  PyList_SET_ITEM(__pyx_t_3, 11, __pyx_kp_u_06);
+  __Pyx_INCREF(__pyx_kp_u_6);
+  __Pyx_GIVEREF(__pyx_kp_u_6);
+  PyList_SET_ITEM(__pyx_t_3, 12, __pyx_kp_u_6);
   __pyx_v___pilih = ((PyObject*)__pyx_t_3);
   __pyx_t_3 = 0;
 
   /* "app.py":164
  * 		_chose = input(f"[{K}?{P}] Chose: ")
- * 		__pilih = ["01","1","02","2","03","3","0","04","4","05","5"]
+ * 		__pilih = ["01","1","02","2","03","3","0","04","4","05","5","06","6"]
  * 		while _chose not in __pilih:             # <<<<<<<<<<<<<<
  * 			print("\n[!] Pilihan tidak ada")
  * 			_chose = input("[?] Chose: ")
@@ -5826,7 +5832,7 @@ static PyObject *__pyx_pf_3app_4Data_menu(CYTHON_UNUSED PyObject *__pyx_self, Py
     if (!__pyx_t_7) break;
 
     /* "app.py":165
- * 		__pilih = ["01","1","02","2","03","3","0","04","4","05","5"]
+ * 		__pilih = ["01","1","02","2","03","3","0","04","4","05","5","06","6"]
  * 		while _chose not in __pilih:
  * 			print("\n[!] Pilihan tidak ada")             # <<<<<<<<<<<<<<
  * 			_chose = input("[?] Chose: ")
@@ -16481,7 +16487,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__28);
 
   /* "app.py":165
- * 		__pilih = ["01","1","02","2","03","3","0","04","4","05","5"]
+ * 		__pilih = ["01","1","02","2","03","3","0","04","4","05","5","06","6"]
  * 		while _chose not in __pilih:
  * 			print("\n[!] Pilihan tidak ada")             # <<<<<<<<<<<<<<
  * 			_chose = input("[?] Chose: ")
