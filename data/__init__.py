@@ -3,12 +3,13 @@
 
 """
 
-Copyright © 2021 - 2023 | Latip176 and Yayan XD
-Semua codingan dibuat oleh Latip176. and Yayan XD
+Copyright © 2021 - 2023 | Latip176
+Semua codingan dibuat oleh Latip176.
 
 """
 
-import requests as req, json, time
+import requests as req, json, time, re
+from bs4 import BeautifulSoup as par
 
 tampung = []
 hitung = 0
@@ -56,7 +57,6 @@ class Dump(Main):
 			hitung+=1
 			print(f"\r[!] Mengumpulkan {BM}{hitung}{P} ID	",end="")
 			time.sleep(0.001)
-		print("")
 		time.sleep(2)
 		print(f"\n[=] Total id -> {H}{len(tampung)}{P}")
 		if (len(tampung))==0:
@@ -92,4 +92,23 @@ class Dump(Main):
 			exit(f"[{BM}!{P}] {M}Ops! Jumlah id hanya terdapat 0.{P}")
 		else:
 			return tampung
+	
+	def pencarian(self,link):
+		r = par(req.get(str(link)).text,'html.parser')
+		for x in r.find_all('td'):
+			data = re.findall('\<a\ href\=\"\/(.*?)\">\<div\ class\=\".*?\">\<div\ class\=\".*?\">(.*?)<\/div\>',str(x))
+			for id,nama in data:
+				if 'profile.php?' in id:
+					id = re.findall('id=(.*)',str(id))[0]
+				elif '<span' in nama:
+					nama = re.findall('(.*?)\<',str(nama))[0]
+				tampung.append(nama+'<=>'+id)
+		try:
+			link = r.find('a',string='Lihat Hasil Selanjutnya').get('href')
+			if(link):
+				print(f'\r[★] Mengumpulkan {len(tampung)} id ',end='')
+				self.pencarian(link)
+		except:
+			pass
+		return tampung
 	
