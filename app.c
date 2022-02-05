@@ -1720,7 +1720,7 @@ static const char __pyx_k_test[] = "__test__";
 static const char __pyx_k_text[] = "text";
 static const char __pyx_k_time[] = "time";
 static const char __pyx_k_user[] = "user";
-static const char __pyx_k_0_1_7[] = "0.1.7";
+static const char __pyx_k_0_1_8[] = "0.1.8";
 static const char __pyx_k_0_91m[] = "\033[0;91m";
 static const char __pyx_k_0_92m[] = "\033[0;92m";
 static const char __pyx_k_0_93m[] = "\033[0;93m";
@@ -2051,7 +2051,7 @@ static const char __pyx_k_accessToken_EAA_w[] = "\\{\"accessToken\"\\:\"(EAA\\w+
   static PyObject *__pyx_kp_u_04;
   static PyObject *__pyx_kp_u_05;
   static PyObject *__pyx_kp_u_06;
-  static PyObject *__pyx_kp_u_0_1_7;
+  static PyObject *__pyx_kp_u_0_1_8;
   static PyObject *__pyx_kp_u_0_91m;
   static PyObject *__pyx_kp_u_0_92m;
   static PyObject *__pyx_kp_u_0_93m;
@@ -3203,10 +3203,10 @@ static PyObject *__pyx_pf_3app_4Main_2banner(CYTHON_UNUSED PyObject *__pyx_self,
   __Pyx_GIVEREF(__pyx_t_4);
   PyTuple_SET_ITEM(__pyx_t_1, 2, __pyx_t_4);
   __pyx_t_4 = 0;
-  __Pyx_INCREF(__pyx_kp_u_0_1_7);
+  __Pyx_INCREF(__pyx_kp_u_0_1_8);
   __pyx_t_2 += 5;
-  __Pyx_GIVEREF(__pyx_kp_u_0_1_7);
-  PyTuple_SET_ITEM(__pyx_t_1, 3, __pyx_kp_u_0_1_7);
+  __Pyx_GIVEREF(__pyx_kp_u_0_1_8);
+  PyTuple_SET_ITEM(__pyx_t_1, 3, __pyx_kp_u_0_1_8);
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_P); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_5 = __Pyx_PyObject_FormatSimple(__pyx_t_4, __pyx_empty_unicode); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 76, __pyx_L1_error)
@@ -16989,7 +16989,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_u_04, __pyx_k_04, sizeof(__pyx_k_04), 0, 1, 0, 0},
   {&__pyx_kp_u_05, __pyx_k_05, sizeof(__pyx_k_05), 0, 1, 0, 0},
   {&__pyx_kp_u_06, __pyx_k_06, sizeof(__pyx_k_06), 0, 1, 0, 0},
-  {&__pyx_kp_u_0_1_7, __pyx_k_0_1_7, sizeof(__pyx_k_0_1_7), 0, 1, 0, 0},
+  {&__pyx_kp_u_0_1_8, __pyx_k_0_1_8, sizeof(__pyx_k_0_1_8), 0, 1, 0, 0},
   {&__pyx_kp_u_0_91m, __pyx_k_0_91m, sizeof(__pyx_k_0_91m), 0, 1, 0, 0},
   {&__pyx_kp_u_0_92m, __pyx_k_0_92m, sizeof(__pyx_k_0_92m), 0, 1, 0, 0},
   {&__pyx_kp_u_0_93m, __pyx_k_0_93m, sizeof(__pyx_k_0_93m), 0, 1, 0, 0},
