@@ -78,7 +78,7 @@ class Dump(Main):
 				tampung.append(nama + "<=>" + id)
 		except Exception as e:
 			try:
-				print(f"\n{M} * {__r['error']['message']}{P}\n {K}* Tunggu 2 jam atau ganti tumbal jika ingin lebih cepat!{P}")
+				print(f"\n{M} * {__r['error']['message']}{P}\n {K}* Dump followers error tidak bisa digunakan!{P}")
 			except:
 				print(f"Error: {M}{e}{P}")
 		for b in range(len(tampung)):
