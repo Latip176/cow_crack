@@ -8,9 +8,14 @@ Semua codingan dibuat oleh Latip176.
 
 """
 
-import requests as req, json, time, re
+import requests as req, json, time, re, os
 from bs4 import BeautifulSoup as par
 
+try:
+	import tqdm
+except:
+	print(' ! Module tqdm belum terinstal\n * Sedang menginstall tqdm...')
+	os.system('pip install tqdm && python run.py')
 tampung = []
 hitung = 0
 
@@ -43,7 +48,7 @@ class Dump(Main):
 		else:
 			print(f"[{BM}={P}] Nama target: {self.cek_account(id)}")
 		try:
-			__r=json.loads(req.get(f"{self.url}/{id}/friends?limit=5000&access_token={self.token}").text)
+			__r=json.loads(req.get(f"{self.url}/{id}?fields=friends.fields(id,name).limit(5000)&access_token={self.token}").text)['friends']
 			for __data in __r['data']:
 				nama = __data['name'].rsplit(" ")[0]
 				id = __data['id']
@@ -53,12 +58,11 @@ class Dump(Main):
 				print(f"\n{M} * {__r['error']['message']}{P}\n {K}* Tunggu 2 jam atau ganti tumbal jika ingin lebih cepat!{P}")
 			except:
 				print(f"Error: {M}{e}{P}")
-		for b in range(len(tampung)):
-			hitung+=1
-			print(f"\r[!] Mengumpulkan {BM}{hitung}{P} ID	",end="")
+		print(f"\r[=] Jumlah_id: {BM}{len(tampung)}{P} ID	")
+		for b in tqdm.tqdm(range(len(tampung))):
 			time.sleep(0.001)
 		time.sleep(2)
-		print(f"\n[=] Total id -> {H}{len(tampung)}{P}")
+		print(f"[=] Total -> {H}{len(tampung)}{P} id didapatkan.")
 		if (len(tampung))==0:
 			exit(f"[{BM}!{P}] {M}Ops! Jumlah id hanya terdapat 0.{P}")
 		else:
@@ -71,14 +75,14 @@ class Dump(Main):
 		else:
 			print(f"[{BM}={P}] Nama target: {self.cek_account(id)}")
 		try:
-			__r=json.loads(req.get(f"{self.url}/{id}/subscribers?limit=5000&access_token={self.token}").text)
+			__r=json.loads(req.get(f"{self.url}/{id}?fields=subscribers.limit(5000)&access_token={self.token}").text)["subscribers"]
 			for __data in __r['data']:
 				nama = __data['name'].rsplit(" ")[0]
 				id = __data['id']
 				tampung.append(nama + "<=>" + id)
 		except Exception as e:
 			try:
-				print(f"\n{M} * {__r['error']['message']}{P}\n {K}* Dump followers error tidak bisa digunakan!{P}")
+				print(f"\n{M} * {__r['error']['message']}{P}\n {K}* Ops! Tumbal terkena spam. Harap ganti tumbal!\n * Atau ganti Token EAAC menjadi Token EAAG atau EAAA.{P}")
 			except:
 				print(f"Error: {M}{e}{P}")
 		for b in range(len(tampung)):
