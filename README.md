@@ -35,12 +35,12 @@ python run.py
 <th>Duraction</th>
 </tr>
 <tr>
-<td>40.000</td>
-<td>1 Bulan</td>
+<td>30.000</td>
+<td>14 Hari</td>
 </tr>
 <tr>
-<td>80.000</td>
-<td>Sampai tools mokad</td>
+<td>50.000</td>
+<td>20 Hari</td>
 </tr>
 </table>
 <h1>Hasil</h1>
@@ -48,4 +48,4 @@ python run.py
 <h1>credits</h1>
 <li>Yayan-XD and Friends. </li>
 <li>Tim offline python sukabumi</li>
-<p>Last update: 06, Febuari, 2022</p>
+<p>Last update: 01, Maret, 2022</p>
