@@ -13,19 +13,23 @@ git clone https://github.com/Latip176/cow_crack
 ```BASH
 cd cow_crack
 python3 -m pip install -r requirements.txt
-python setup.py build_ext --inplace
 ```
 # running
+## buat hp 64 bit
 ```BASH
-cd $HOME/cow_crack
-python run.py
+cd cow_crack
+python run.py --bit 64
+```
+## buat hp 32 bit
+```
+cd cow_crack
+python run.py --bit 32
 ```
 # command buat update
 ```BASH
 cd $HOME/cow_crack
 git pull
 rm -rf *.so
-python setup.py build_ext --inplace
 python run.py
 ```
 # license price information
