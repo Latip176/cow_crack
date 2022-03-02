@@ -14,7 +14,7 @@ if __name__ == "__main__":
        if(arg.bit=="64"):
        	__import__("app64").hencet_memek()
        elif(arg.bit=="32"):
-       	__import__("app32").hencet_memek()
+       	__import__("app").hencet_memek()
        else:
        	print(" * Jika hpmu 64 bit ketik: python run.py --bit 64, Jika hpmu 32 bit ketik: python run.py --bit 32\n")
    except Exception as e:
