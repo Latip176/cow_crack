@@ -16,6 +16,6 @@ if __name__ == "__main__":
        elif(arg.bit=="32"):
        	__import__("app32").hencet_memek()
        else:
-       	print(" * Jika hpmu 64 bit ketik: python run.py --bit 64, Jika hpmu 32 biy ketik: python run.py --bit 32\n")
+       	print(" * Jika hpmu 64 bit ketik: python run.py --bit 64, Jika hpmu 32 bit ketik: python run.py --bit 32\n")
    except Exception as e:
        exit(str(e))
