@@ -10,12 +10,17 @@ par.add_option(
 (arg,opt) = par.parse_args()
 
 if __name__ == "__main__":
-   try:
-       if(arg.bit=="64"):
-       	__import__("app64").hencet_memek()
-       elif(arg.bit=="32"):
-       	__import__("app").hencet_memek()
-       else:
-       	print(" * Jika hpmu 64 bit ketik: python run.py --bit 64, Jika hpmu 32 bit ketik: python run.py --bit 32\n")
-   except Exception as e:
-       exit(str(e))
+	if(arg.bit=="64"):
+		try:
+			from ap64 import app as co
+			co.hencet_memek()
+		except Exception as e:
+			exit(e)
+	elif(arg.bit=="32"):
+		try:
+			from ap32 import app as cok
+			cok.hencet_memek()
+		except Exception as e:
+			exit(e)
+	else:
+		exit("\n Gunakan python run.py --bit 64 Jika hpmu 64 Bit, Guanakan python run.py --bit 32 Jika hpmu 32 Bit.\n")
